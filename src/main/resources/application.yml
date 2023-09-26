@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+properties:
+  # if property "true":     {(s)} == true
+  #                         [{(s)}] == true
+  #                         ((s)(s)) == true
+  #
+  # if property "false":     {(s)} == false
+  #                          ((s)(s)) == false, but ((s)s(s)) == always true
+  #
+  # ((s)) or {{s}} == false  (double identical brackets always false)
+  #
+  # default == true
+  is-inner-brackets-useful: true
+
+  # "[^useful_characters]"
+  regex: "[^a-zA-Z0-9а-яА-Я]"
+
+  # opening and closing characters one after the other
+  brackets:
+    - "("
+    - ")"
+    - "["
+    - "]"
+    - "{"
+    - "}"

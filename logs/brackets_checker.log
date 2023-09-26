@@ -1,0 +1,902 @@
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t}t)t]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t}t)t]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t(t(t))))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t(t(t))))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )t(t)t"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()t(t)t"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [0] [4] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [1] [5] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t)))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t)))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [0] [7]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [11] [27] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "([((t)t)t]t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "([((t)t)t]t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t(t[t(t)])}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t(t[t(t)])}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{a[b]c}d)e]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{a[b]c}d)e]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a{b(c)d}e]f}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a{b(c)d}e]f}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[b(c)d]e}f)g]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[b(c)d]e}f)g]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d}e)f]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d}e)f]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d(e)f}g)h]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d(e)f}g)h]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-16 21:23:52 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )t(t)t"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()t(t)t"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(s] )}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(s])}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [3]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[s(s{()})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[s(s{()})]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [5] [6]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((([t]))(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((([t]))(t))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [7]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)((t)))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)((t)))"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [4] [8]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{{a[b]c}}d)e]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{{a[b]c}}d)e]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [3] [11]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a({b(c)d}e]f}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a({b(c)d}e]f}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [12]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[[b(c)d]e}f)g]]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[[b(c)d]e}f)g]]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [13]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[((a{b[c]d}e))f]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[((a{b[c]d}e))f]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [13]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c](d(e)f}g)h]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c](d(e)f}g)h]"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [14]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-16 21:23:52 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [2] [32]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t}t)t]"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t}t)t]"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)t)t)t)"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)t)t)t)"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t(t(t))))"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t(t(t))))"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-22 16:31:06 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )t(t)t"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()t(t)t"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [0] [4] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [1] [5] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )(t))"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()(t))"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t)))"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t)))"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [0] [7]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-22 16:32:19 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [11] [27] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-23 07:48:34 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "([((t)t)t]t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "([((t)t)t]t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t(t[t(t)])}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t(t[t(t)])}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{a[b]c}d)e]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{a[b]c}d)e]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a{b(c)d}e]f}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a{b(c)d}e]f}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[b(c)d]e}f)g]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[b(c)d]e}f)g]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d}e)f]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d}e)f]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d(e)f}g)h]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d(e)f}g)h]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-23 07:48:34 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-23 07:48:34 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )t(t)t"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()t(t)t"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(s] )}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(s])}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [3]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[s(s{()})]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[s(s{()})]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [5] [6]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((([t]))(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((([t]))(t))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [7]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)((t)))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)((t)))"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [4] [8]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{{a[b]c}}d)e]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{{a[b]c}}d)e]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [3] [11]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a({b(c)d}e]f}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a({b(c)d}e]f}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [12]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[[b(c)d]e}f)g]]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[[b(c)d]e}f)g]]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [13]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[((a{b[c]d}e))f]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[((a{b[c]d}e))f]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [13]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c](d(e)f}g)h]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c](d(e)f}g)h]"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [14]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-23 07:48:34 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [2] [32]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-23 07:58:59 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t}t)t]"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t}t)t]"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)t)t)t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)t)t)t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t(t(t))))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t(t(t))))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)t]t]t]t]t}t}t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[t(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-23 07:58:59 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-23 07:58:59 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )t(t)t"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()t(t)t"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [0] [4] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [1] [5] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )(t))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()(t))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t)))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t)))"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [0] [7]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-23 07:58:59 DEBUG BracketsCheckerBaseImpl:97 - There is no useful characters between brackets. Indexes in the prepared text [11] [27] ====> innerBracketsUseful == false
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-25 10:53:58 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "([((t)t)t]t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "([((t)t)t]t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t(t[t(t)])}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t(t[t(t)])}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{a[b]c}d)e]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{a[b]c}d)e]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a{b(c)d}e]f}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a{b(c)d}e]f}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[b(c)d]e}f)g]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[b(c)d]e}f)g]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d}e)f]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d}e)f]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d(e)f}g)h]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d(e)f}g)h]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-25 10:53:58 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-25 10:53:58 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )t(t)t"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()t(t)t"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(s] )}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(s])}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [3]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[s(s{()})]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[s(s{()})]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [5] [6]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((([t]))(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((([t]))(t))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [7]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)((t)))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)((t)))"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [4] [8]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{{a[b]c}}d)e]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{{a[b]c}}d)e]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [3] [11]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a({b(c)d}e]f}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a({b(c)d}e]f}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [12]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[[b(c)d]e}f)g]]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[[b(c)d]e}f)g]]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [13]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[((a{b[c]d}e))f]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[((a{b[c]d}e))f]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [13]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c](d(e)f}g)h]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c](d(e)f}g)h]"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [14]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-25 10:53:58 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [2] [32]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:06 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "null"
+2023-09-25 21:49:06 ERROR ApiExceptionHandler:15 - The text is null!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(t)}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(t)}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({t})]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({t})]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)t(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)t(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "([((t)t)t]t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "([((t)t)t]t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t(t[t(t)])}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t(t[t(t)])}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{a[b]c}d)e]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{a[b]c}d)e]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a{b(c)d}e]f}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a{b(c)d}e]f}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[b(c)d]e}f)g]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[b(c)d]e}f)g]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d}e)f]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d}e)f]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c]d(e)f}g)h]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c]d(e)f}g)h]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t(t{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t(t{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{t{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:126 - Checking is complete. The text is correct!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "%^*@$#!?><|/.,+-_=:; "
+2023-09-25 21:49:07 ERROR ApiExceptionHandler:15 - There are no useful characters in the text!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: ""
+2023-09-25 21:49:07 ERROR ApiExceptionHandler:15 - The text is empty!
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "( )"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "()"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [0] [1]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(( )t(t)t"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(()t(t)t"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [1] [2]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{(s] )}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{(s])}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [3]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[s(s{()})]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[s(s{()})]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:105 - There is no useful characters between brackets. Indexes in the prepared text [5] [6]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((([t]))(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((([t]))(t))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [7]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((t)((t)))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((t)((t)))"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [4] [8]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "((((t)[t)t)t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "((((t)[t)t)t)"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [8]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "(t(t{t(t))})"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "(t(t{t(t))})"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t[t{t})]}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t[t{t})]}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(t{{a[b]c}}d)e]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(t{{a[b]c}}d)e]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [3] [11]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{[a({b(c)d}e]f}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{[a({b(c)d}e]f}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [12]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[({a[[b(c)d]e}f)g]]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[({a[[b(c)d]e}f)g]]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [13]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[((a{b[c]d}e))f]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[((a{b[c]d}e))f]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [1] [13]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "[(a{b[c](d(e)f}g)h]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "[(a{b[c](d(e)f}g)h]"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [14]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t[t([{t})]} {{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t[t([{t})]}{{{[[[[(((((t)t)t)t)t)]t]t]t]t}t}t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:79 - The closing character does not match the opening one. Index in the prepared text [9]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}} {[({t}t)t]t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "{t{{t[t[t[t[(t(t(t(t(t)))))]]]]}}}{[({t}t)t]t}"
+2023-09-25 21:49:07 DEBUG BracketsCheckerBaseImpl:68 - Double identical brackets! Indexes in the prepared text [2] [32]
+Checking is complete. The text is incorrect
+
+2023-09-25 21:58:36 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "Lorem (ip)sum) dolor {sit amet}, consectetur [adipiscing] elit."
+2023-09-25 21:58:36 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "Lorem(ip)sum)dolor{sitamet}consectetur[adipiscing]elit"
+2023-09-25 21:58:36 DEBUG BracketsCheckerBaseImpl:58 - Closing bracket without opening! Index in the prepared text [12]
+Checking is complete. The text is incorrect
+
+2023-09-26 11:19:01 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "Lorem (ips[]um) dolor {sit amet}, consectetur [adipiscing] elit."
+2023-09-26 11:19:01 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "Lorem(ips[]um)dolor{sitamet}consectetur[adipiscing]elit"
+2023-09-26 11:19:01 DEBUG BracketsCheckerBaseImpl:105 - There are no useful characters between brackets. Indexes in the prepared text [9] [10]
+Checking is complete. The text is incorrect
+
+2023-09-26 11:24:26 DEBUG BracketsCheckerBaseImpl:43 - Method "check" received the text: "Lorem ((((ipsum) dolor {sit amet}, consectetur [adipiscing] elit."
+2023-09-26 11:24:26 DEBUG BracketsCheckerBaseImpl:45 - Text after preparation: "Lorem((((ipsum)dolor{sitamet}consectetur[adipiscing]elit"
+2023-09-26 11:24:26 DEBUG BracketsCheckerBaseImpl:119 - There is(are) no closing bracket(s)! Index(es) opening bracket(s) in the prepared text: [5, 6, 7]
+2023-09-26 11:24:26 DEBUG BracketsCheckerBaseImpl:123 - Checking is complete. The text is incorrect!
+
